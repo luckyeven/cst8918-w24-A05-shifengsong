@@ -75,7 +75,7 @@ resource "azurerm_subnet" "webserver" {
 
 # Define the network security group and rules
 resource "azurerm_network_security_group" "webserver" {
-  name                = "${var.labelPrefix}A05Vnet"
+  name                = "${var.labelPrefix}A05Securitygp"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   security_rule {
